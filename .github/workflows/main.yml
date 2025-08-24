@@ -1,0 +1,13 @@
+name: myfirstpipeline
+on: [push]
+
+jobs:
+  build:
+    runs-on: agent-vinod   # ye runner machine hogi
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3   # code checkout karega
+
+      - name: Run Hello World
+        run: echo "Hello Agent Vinod, GitHub Actions shuru ho gaya!"
+  
