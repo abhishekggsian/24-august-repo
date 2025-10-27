@@ -1,9 +1,0 @@
-name: myfirstpipeline
-on: [push]   # jab bhi push hoga, workflow chalega
-
-jobs:
-  my-first-job:
-    runs-on: [self-hosted, Windows, X64]
-    steps:
-      - name: Run Hello World
-        run: echo "Hello Agent Vinod, GitHub Actions shuru ho gaya!"
